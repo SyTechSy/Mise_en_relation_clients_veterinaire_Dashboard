@@ -1,0 +1,1260 @@
+
+<div class="container">
+
+    <!-- // content  global-->
+    <div class="content_global">
+
+        <!-- // content  -->
+        <div class="content">
+            <!-- //////////////////////////// STATISTIQUE  -->
+            <div class="statistique">
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series!"
+                      [chart]="chartOptions.chart!"
+                      [dataLabels]="chartOptions.dataLabels!"
+                      [markers]="chartOptions.markers!"
+                      [xaxis]="chartOptions.xaxis!"
+                      [yaxis]="chartOptions.yaxis!"
+                      [stroke]="chartOptions.stroke!"
+                      [title]="chartOptions.title!"
+                      [colors]="chartOptions.colors!"
+                      [fill]="chartOptions.fill!"
+                      [forecastDataPoints]="chartOptions.forecastDataPoints!"
+                      [legend]="chartOptions.legend!"
+                    ></apx-chart>
+                </div>
+                  
+            </div>
+
+            <!-- /////////////////////////////// Nombre statistique -->
+            <div class="cadre_dynamic_container">
+
+                <!-- // adre_dynamic -->
+                <div class="cadre_dynamic">
+
+                    <div class="cadre_double">
+                        <!-- // cadre 1 -->
+                        <div class="cadre_user">
+                            
+                            <div class="user_dash">
+                                <!-- // nombre Utilisateur  -->
+                                <div class="name">
+                                    <p> Nbre </p>
+                                    <p> Utilisateur </p>
+                                </div>
+
+                                <!-- .icon de bash  -->
+                                <div class="icon_dash">
+                                    <div class="dash">
+                                        <i class="ri-bar-chart-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- // Nombre numero  -->
+                            <div class="nombre_num_dash">
+                                <!-- // nombre  -->
+                                <div class="nbre">
+                                    <p>
+                                        200
+                                    </p>
+                                    <p class="icon_monte">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <!-- // dash arrow  -->
+
+                            </div>
+
+
+                        </div>
+
+                        
+                        <!-- // cadre 2 -->
+                        <div class="cadre_vete">
+                            
+                            <div class="user_dash">
+                                <!-- // nombre Utilisateur  -->
+                                <div class="name">
+                                    <p> Nbre </p>
+                                    <p> Vétérinaire </p>
+                                </div>
+
+                                <!-- .icon de bash  -->
+                                <div class="icon_dash">
+                                    <div class="dash">
+                                        <i class="ri-line-chart-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- // Nombre numero  -->
+                            <div class="nombre_num_dash">
+                                <!-- // nombre  -->
+                                <div class="nbre">
+                                    <p>
+                                        150
+                                    </p>
+                                    <p class="icon_monte">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <!-- // dash arrow  -->
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    
+                    <!-- // cadre 3 -->
+                    <div class="cadre_attent">
+                            
+                        <div class="user_dash" style="padding-top: 20px;">
+                            <!-- // nombre Utilisateur  -->
+                            <div class="name">
+                                <p> Compte </p>
+                                <p> en attente </p>
+                            </div>
+
+                            <!-- .icon de bash  -->
+                            <div class="icon_dash icon_dash2">
+                                <div class="dash">
+                                    <i class="ri-donut-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // Nombre numero  -->
+                        <div class="nombre_num_dash">
+                            <!-- // nombre  -->
+                            <div class="nbre">
+                                <p>
+                                    02
+                                </p>
+                                <p class="icon_monte">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <!-- // dash arrow  -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- // Alert Vétérinaire  -->
+    <div class="container_alert_veterinaire">
+
+        <div class="content_global alert_veterinaire">
+
+            <!-- // le cadre de vétérinaire -->
+            <div class="cadre_alert_veterinaire">
+
+                <!-- // titre  -->
+                <div class="title_veterinaire">
+                    <p>Alert Vétérinaire</p>
+                </div>
+                
+                <!-- // border bottom  -->
+                <div class="border_bottom">
+                    <div class="ligne_border_bottom"></div>
+                </div>
+
+                <div class="scrolview">
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                <!-- // border left  -->
+                <div class="border_left">
+                    <div class="ligne_border_left"></div>
+                </div>
+
+                <div class="container_perso">
+
+                    <!-- // lies information  -->
+                    <div class="content_perso">
+                        <!-- // photo  -->
+                        <div class="photo_perso">
+                            <img src="../../../assets/images/profil.jpg" alt="">
+                        </div>
+
+                        <div class="container_name">
+                            <!-- // nom et prenom de la personne  -->
+                            <div class="name">
+                                <!-- // nom  -->
+                                <p class="nom_perso">
+                                    Diakaridia
+                                </p>
+                                <!-- // prenom  -->
+                                <div class="prenom_perso">
+                                    SY
+                                </div>
+                            </div>
+
+                            <!-- // domaine  -->
+                            <div class="domaine">
+                                <p class="domaine_para">
+                                    Domaine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- // icon  -->
+                    <div class="icon_arrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+            <!-- // le cadre de Utilisateur  -->
+            <div class="cadre_alert_veterinaire">
+
+                <!-- // titre  -->
+                <div class="title_veterinaire">
+                    <p>Ici calendar</p>
+                </div>
+
+            </div>
+
+            <!-- // le cadre de Utilisateur  -->
+            <div class="cadre_alert_veterinaire">
+
+                <!-- // titre  -->
+                <div class="title_veterinaire">
+                    <p>Alert Utilisateur</p>
+                </div>
+                
+                <!-- // border bottom  -->
+                <div class="border_bottom">
+                    <div class="ligne_border_bottom"></div>
+                </div>
+
+                <div class="scrolview">
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- // border left  -->
+                    <div class="border_left">
+                        <div class="ligne_border_left"></div>
+                    </div>
+
+                    <div class="container_perso">
+
+                        <!-- // lies information  -->
+                        <div class="content_perso">
+                            <!-- // photo  -->
+                            <div class="photo_perso">
+                                <img src="../../../assets/images/profil.jpg" alt="">
+                            </div>
+
+                            <div class="container_name">
+                                <!-- // nom et prenom de la personne  -->
+                                <div class="name">
+                                    <!-- // nom  -->
+                                    <p class="nom_perso">
+                                        Diakaridia
+                                    </p>
+                                    <!-- // prenom  -->
+                                    <div class="prenom_perso">
+                                        SY
+                                    </div>
+                                </div>
+
+                                <!-- // domaine  -->
+                                <div class="domaine">
+                                    <p class="domaine_para">
+                                        Domaine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- // icon  -->
+                        <div class="icon_arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                <!-- // border left  -->
+                <div class="border_left">
+                    <div class="ligne_border_left"></div>
+                </div>
+
+                <div class="container_perso">
+
+                    <!-- // lies information  -->
+                    <div class="content_perso">
+                        <!-- // photo  -->
+                        <div class="photo_perso">
+                            <img src="../../../assets/images/profil.jpg" alt="">
+                        </div>
+
+                        <div class="container_name">
+                            <!-- // nom et prenom de la personne  -->
+                            <div class="name">
+                                <!-- // nom  -->
+                                <p class="nom_perso">
+                                    Diakaridia
+                                </p>
+                                <!-- // prenom  -->
+                                <div class="prenom_perso">
+                                    SY
+                                </div>
+                            </div>
+
+                            <!-- // domaine  -->
+                            <div class="domaine">
+                                <p class="domaine_para">
+                                    Domaine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- // icon  -->
+                    <div class="icon_arrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- /////////////// statistique de nombre de hemme et homme  -->
+    <div class="personnage_container">
+
+        <!-- // Content personnage -->
+        <div class="content_personnage">
+
+            <!-- Cadre personnage 1 -->
+            <div class="cadre_personnage">
+                <!-- <div class="card_personnage_content"> -->
+                    <!-- // name  -->
+                    <div class="name_user_personnage">
+                        <p>Utilisateur</p>
+                    </div>
+
+                    <div class="card_personnage_content">
+                       <div class="cont_total_pour">
+                            <!-- // total femme personnage  -->
+                            <div class="total_personnage">
+                                <p>
+                                    Total Femme
+                                </p>
+                            </div>
+
+                            <!-- // icon evolution et pourcentage  -->
+                            <div class="icon_personnage">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                    </svg>
+                                </p>
+
+                                <div class="pourcentage_personnage">
+                                    <p>
+                                        65%
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                        
+                        <!-- // image  -->
+                        <div class="image_personnage">
+                            <img src="../../../assets/images/icone-de-femme-vert.png" alt="">
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+
+
+            <!-- Cadre personnage 2 -->
+            <div class="cadre_personnage">
+                <!-- <div class="card_personnage_content"> -->
+                    <!-- // name  -->
+                    <div class="name_user_personnage">
+                        <p>Utilisateur</p>
+                    </div>
+
+                    <div class="card_personnage_content">
+                       <div class="cont_total_pour">
+                            <!-- // total femme personnage  -->
+                            <div class="total_personnage">
+                                <p>
+                                    Total Homme
+                                </p>
+                            </div>
+
+                            <!-- // icon evolution et pourcentage  -->
+                            <div class="icon_personnage">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                    </svg>
+                                </p>
+
+                                <div class="pourcentage_personnage">
+                                    <p>
+                                        35%
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                        
+                        <!-- // image  -->
+                        <div class="image_personnage">
+                            <img src="../../../assets/images/icone-de-l-homme-vert.png" alt="">
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+
+
+            <!-- Cadre personnage 3 -->
+            <div class="cadre_personnage">
+                <!-- <div class="card_personnage_content"> -->
+                    <!-- // name  -->
+                    <div class="name_user_personnage">
+                        <p>Vétérinaire</p>
+                    </div>
+
+                    <div class="card_personnage_content">
+                       <div class="cont_total_pour">
+                            <!-- // total femme personnage  -->
+                            <div class="total_personnage">
+                                <p>
+                                    Total Femme
+                                </p>
+                            </div>
+
+                            <!-- // icon evolution et pourcentage  -->
+                            <div class="icon_personnage">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                    </svg>
+                                </p>
+
+                                <div class="pourcentage_personnage">
+                                    <p>
+                                        15%
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                        
+                        <!-- // image  -->
+                        <div class="image_personnage">
+                            <img src="../../../assets/images/icone-de-femme-vert.png" alt="">
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+
+
+            <!-- Cadre personnage 4 -->
+            <div class="cadre_personnage">
+                <!-- <div class="card_personnage_content"> -->
+                    <!-- // name  -->
+                    <div class="name_user_personnage">
+                        <p>Vétérinaire</p>
+                    </div>
+
+                    <div class="card_personnage_content">
+                       <div class="cont_total_pour">
+                            <!-- // total femme personnage  -->
+                            <div class="total_personnage">
+                                <p>
+                                    Total Homme
+                                </p>
+                            </div>
+
+                            <!-- // icon evolution et pourcentage  -->
+                            <div class="icon_personnage">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9098 11.2155L28 8L25.2396 19.2122L21.7961 15.9064L16.2414 21.6925C16.0528 21.889 15.7923 22 15.52 22C15.2477 22 14.9872 21.889 14.7986 21.6925L10.72 17.444L4.72139 23.6925C4.33891 24.0909 3.70588 24.1039 3.30747 23.7214C2.90906 23.3389 2.89614 22.7059 3.27861 22.3075L9.99861 15.3075C10.1872 15.111 10.4477 15 10.72 15C10.9923 15 11.2528 15.111 11.4414 15.3075L15.52 19.556L20.3533 14.5213L16.9098 11.2155Z" fill="#1C1C1C"/>
+                                    </svg>
+                                </p>
+
+                                <div class="pourcentage_personnage">
+                                    <p>
+                                        65%
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                        
+                        <!-- // image  -->
+                        <div class="image_personnage">
+                            <img src="../../../assets/images/icone-de-l-homme-vert.png" alt="">
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,262 @@
+.welcome_container {
+    margin: 20px 0 0 34px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+}
+
+.container_information_admin {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh
+
+}
+
+
+.form_input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 280px;
+    height: 130px;
+}
+
+.required {
+    color: red;
+}
+
+.input_champs {
+    padding:  30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.titre {
+    margin-bottom: 7px;
+}
+
+.input input{
+    /* max-width: 370px; */
+    width: 100%;
+    min-width: 350px;
+    border: 1px solid #d6d4d4;
+    border-radius: 5px;
+    height: 40px;
+    background: transparent;
+    padding-left: 15px;
+    outline: none;
+    /* pointer-events: none; */
+}
+
+.input_email input {
+    /* max-width: 370px; */
+    width: 100%;
+    min-width: 350px;
+    border: 1px solid #d6d4d4;
+    border-radius: 5px;
+    height: 40px;
+    background: transparent;
+    padding-left: 15px;
+    outline: none;
+    /* pointer-events: none; */
+}
+
+.double_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_submit {
+    /* margin-top: 20px; */
+    position: relative;
+    top: 20px;
+}
+
+.btn {
+    width: 105%;
+    height: 40px;
+    border: none;
+    background-color: #008000;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    &:hover {
+        background-color: #006300;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+.bare {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    left: 40px;
+}
+
+.ligne {
+    width: 80%;
+    background-color: #d6d4d4d8;
+    height: 1px;
+    
+}
+
+/* /////////// */
+
+.copy {
+    position: absolute;
+    bottom: -80px;
+    right: 20px;
+}
+
+.copy p {
+    font-size: 14px;
+    letter-spacing: 0.60px;
+
+}
+
+/* ////////////////////// KOURA  */
+
+.image_logo {
+    width: 110px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.image_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome_two .para_welcome{
+    font-size: 16px;
+}
+
+.welcome_two .para_welcome_para {
+    font-size: 13px;
+}
+
+.text_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_submit {
+    margin-right: -15px;
+}
+
+.submit {
+    width: 250px;
+    background-color: #008000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 1068px) {
+    .double_input {
+        display: block;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .form_input_media {
+        padding-left: 0!important;
+    }
+
+    .text_btn {
+        display: block;
+        text-align: center;
+    }
+
+    /* ////////// */
+
+
+    .container_information_admin {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .submit {
+        width: 100%;
+        background-color: #008000;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .text_btn {
+        margin-top: 15px; 
+        margin-left: 10px;  
+    }
+
+    .button_submit {
+        margin-top: 10px;
+    }
+
+    .bare {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        /* left: 40px; */
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .input input{
+        /* max-width: 250px; */
+        width: 100%;
+        min-width: 250px;
+        border: 1px solid #d6d4d4;
+        border-radius: 5px;
+        height: 40px;
+        background: transparent;
+        padding-left: 15px;
+        outline: none;
+        /* pointer-events: none; */
+    }
+
+    .input_email input {
+        width: 100%;
+        min-width: 250px;
+        border: 1px solid #d6d4d4;
+        border-radius: 5px;
+        height: 40px;
+        background: transparent;
+        padding-left: 15px;
+        outline: none;
+        /* pointer-events: none; */
+    }
+
+}

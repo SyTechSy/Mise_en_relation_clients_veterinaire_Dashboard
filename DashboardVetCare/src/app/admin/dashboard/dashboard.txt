@@ -1,0 +1,171 @@
+<!-- // dashboard container  -->
+<div class="container_dashboard">
+
+    <!-- // content contanier  -->
+    <div class="content_dashboard">
+
+        <!-- // le menu dashboard  -->
+        <div class="menu_dashboard">
+
+            <!-- // titre dashboard  -->
+            <div class="title_dash">
+                <p>
+                    VetCare
+                </p>
+                
+
+                <div class="icon_toggle">
+                    <i class="ri-menu-3-fill"></i>
+                </div>
+            </div>
+
+            <!-- //////// un bare  -->
+
+            <div class="bare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="234" height="2" viewBox="0 0 234 2" fill="none">
+                    <path d="M0 1H233.25" stroke="url(#paint0_linear_343_1348)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_343_1348" x1="0" y1="1" x2="231" y2="1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#000101" stop-opacity="0"/>
+                        <stop offset="0.5" stop-color="#283B4F"/>
+                        <stop offset="1" stop-opacity="0.15625"/>
+                      </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- /////////// fin de bare  -->
+
+            <!-- // les different tache  -->
+            <div class="tache_container">
+
+                <!-- // les content de tache 1 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache">
+                            <!-- // icon  -->
+                            <div class="icon_tache">
+                                <i class="ri-dashboard-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Dashboard
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 2 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-user-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Table Utilisateur
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 3 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-nurse-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Table Vétérinaire
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // titre de page compte  -->
+                <div class="page_compte" style="margin-bottom: 15px;">
+                    <p>
+                        Page de compte
+                    </p>
+                </div>
+
+                <!-- // les content de tache 4 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-account-circle-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Profil
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 5 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i style="transform: rotate(50deg);" class="ri-rocket-2-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Ajouter un Admin
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- //////// logo  -->
+                <div class="image_logo">
+                    <img src="../../../assets/images/LOGO2.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /////// Fin de dashboard  -->
+
+        <!-- // le contenu dashboard  -->
+        <div class="dashboard_contenu_global">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptas!
+        </div>
+
+    </div>
+
+</div>

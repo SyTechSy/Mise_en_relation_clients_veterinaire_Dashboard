@@ -1,0 +1,123 @@
+            <!-- /////////// fin de bare  -->
+
+            <!-- // les different tache  -->
+            <div class="tache_container">
+
+                <!-- // les content de tache 1 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache">
+                            <!-- // icon  -->
+                            <div class="icon_tache">
+                                <i class="ri-dashboard-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Dashboard
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 2 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-user-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Table Utilisateur
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 3 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-nurse-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Table Vétérinaire
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // titre de page compte  -->
+                <div class="page_compte" style="margin-bottom: 15px;">
+                    <p>
+                        Page de compte
+                    </p>
+                </div>
+
+                <!-- // les content de tache 4 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i class="ri-account-circle-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Profil
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- // les content de tache 5 -->
+                <div class="content_tache">
+
+                    <div class="cadre_tache_global">
+                        <!-- // dashboard -->
+                        <div class="cadre_tache1">
+                            <!-- // icon  -->
+                            <div class="icon_tache2">
+                                <i style="transform: rotate(50deg);" class="ri-rocket-2-fill"></i>
+                            </div>
+                            <!-- // name_tache  -->
+                            <div class="name_tache">
+                                <p>
+                                    Ajouter un Admin
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- //////// logo  -->
+                <div class="image_logo">
+                    <img src="../../../assets/images/LOGO2.png" alt="">
+                </div>
+
+            </div>
