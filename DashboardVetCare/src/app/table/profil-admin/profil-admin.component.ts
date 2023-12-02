@@ -17,7 +17,7 @@ export class ProfilAdminComponent implements OnInit{
 
   constructor(
     private userService: UtilisateurService,
-    private router : Router
+    private router : Router,
   ) { }
 
 

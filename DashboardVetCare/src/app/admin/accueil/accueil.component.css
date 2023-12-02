@@ -89,7 +89,7 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-color: #F2F6FA;;
+    background-color: #F2F6FA;
 }
 
 .dash i {
@@ -179,10 +179,10 @@
     border-radius: 50%;
 }
 
-.name {
+/* .name {
     display: flex;
     align-items: center;
-}
+} */
 
 .container_perso {
     display: flex;

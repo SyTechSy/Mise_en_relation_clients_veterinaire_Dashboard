@@ -61,4 +61,16 @@ export class VeterinaireService {
   getVetes():Veterinaire|undefined{
     return this.vete1
   }
+
+
+
+  
+
+  // /::::::::::::::::::::::
+
+  getCountVeterinaire(): Observable<number> {
+    return this.http.get<number>(this.apiUrl+ '/count');
+  }
+
+
 }

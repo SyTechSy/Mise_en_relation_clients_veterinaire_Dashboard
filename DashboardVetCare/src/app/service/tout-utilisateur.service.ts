@@ -59,4 +59,11 @@ export class ToutUtilisateurService {
     return this.medi1
   }
 
+
+  // /::::::::::::::::::::::
+
+  getCountUtilisateurs(): Observable<number> {
+    return this.http.get<number>(this.apiUrl+ '/count');
+  }
+
 }

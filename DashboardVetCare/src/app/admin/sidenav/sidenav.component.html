@@ -41,13 +41,13 @@
 
         <div class="cadre_tache_global" routerLink="/dashboard">
             <!-- // icon  -->
-            <div class="container_icon">
+            <div [ngClass]="{'cadre_tache_global': true, 'active_icon_dash': isDashboardClicked}" (click)="toggleDashboardClick()" class="container_icon">
                 <div class="icon_tache">
                     <i class="ri-dashboard-fill"></i>
                 </div>
             </div>
             
-            <div class="cadre_tache" *ngIf="collapsed">
+            <div [ngClass]="{'cadre_tache_global': true, 'active': isDashboardClicked}" (click)="toggleDashboardClick()" class="cadre_tache" *ngIf="collapsed">
             <!-- // name_tache  -->
                 <div *ngIf="collapsed" class="name_tache">
                     <p>
@@ -61,13 +61,13 @@
         <!-- // table utilisateur  -->
         <div class="cadre_tache_global" routerLink="/utilisateur">
             <!-- // icon  -->
-            <div class="container_icon2">
+            <div [ngClass]="{'cadre_tache_global': true, 'active_icon': isUtilisateurClicked}" (click)="toggleUtilisateurClick()" class="container_icon2">
                 <div class="icon_tache2">
                     <i class="ri-user-fill"></i>
                 </div>
             </div>
             
-            <div class="cadre_tache2" *ngIf="collapsed">
+            <div [ngClass]="{'cadre_tache_global': true, 'active': isUtilisateurClicked}" (click)="toggleUtilisateurClick()" class="cadre_tache2" *ngIf="collapsed">
             <!-- // name_tache  -->
                 <div *ngIf="collapsed" class="name_tache">
                     <p>
@@ -80,13 +80,13 @@
         <!-- // table veterinaire -->
         <div class="cadre_tache_global" routerLink="/veterinaire">
             <!-- // icon  -->
-            <div class="container_icon2">
+            <div [ngClass]="{'cadre_tache_global': true, 'active_icon': isVeterinaireClicked}" (click)="toggleVeterinaireClick()" class="container_icon2">
                 <div class="icon_tache2">
                     <i class="ri-nurse-fill"></i>
                 </div>
             </div>
             
-            <div class="cadre_tache2" *ngIf="collapsed">
+            <div [ngClass]="{'cadre_tache_global': true, 'active': isVeterinaireClicked}" (click)="toggleVeterinaireClick()" class="cadre_tache2" *ngIf="collapsed">
             <!-- // name_tache  -->
                 <div *ngIf="collapsed" class="name_tache">
                     <p>
@@ -105,13 +105,13 @@
         <!-- // table utilisateur  -->
         <div class="cadre_tache_global" routerLink="/profil-admin">
             <!-- // icon  -->
-            <div class="container_icon2">
+            <div [ngClass]="{'cadre_tache_global': true, 'active_icon': isProfilAdminClicked}" (click)="toggleProfilAdminClick()" class="container_icon2">
                 <div class="icon_tache2">
                     <i class="ri-account-circle-fill"></i>
                 </div>
             </div>
             
-            <div class="cadre_tache2" *ngIf="collapsed">
+            <div [ngClass]="{'cadre_tache_global': true, 'active': isProfilAdminClicked}" (click)="toggleProfilAdminClick()" class="cadre_tache2" *ngIf="collapsed">
             <!-- // name_tache  -->
                 <div *ngIf="collapsed" class="name_tache">
                     <p>
@@ -124,13 +124,13 @@
         <!-- // table veterinaire -->
         <div class="cadre_tache_global" routerLink="/ajouter-admin">
             <!-- // icon  -->
-            <div class="container_icon2">
+            <div [ngClass]="{'cadre_tache_global': true, 'active_icon': isAjouterAdminClicked}" (click)="toggleAjouterAdminClick()" class="container_icon2">
                 <div class="icon_tache2">
                     <i style="transform: rotate(50deg);" class="ri-rocket-2-fill"></i>
                 </div>
             </div>
             
-            <div class="cadre_tache2" *ngIf="collapsed">
+            <div [ngClass]="{'cadre_tache_global': true, 'active': isAjouterAdminClicked}" (click)="toggleAjouterAdminClick()" class="cadre_tache2" *ngIf="collapsed">
             <!-- // name_tache  -->
                 <div *ngIf="collapsed" class="name_tache">
                     <p>

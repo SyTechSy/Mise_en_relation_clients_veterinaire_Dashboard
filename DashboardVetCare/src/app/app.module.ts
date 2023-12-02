@@ -32,7 +32,6 @@ import { ProfilAdminComponent } from './table/profil-admin/profil-admin.componen
     AccueilComponent,
     AjouterAdminComponent,
     // ProfilAdminComponent
-    ProfilAdminComponent
   ],
   imports: [
     BrowserModule,

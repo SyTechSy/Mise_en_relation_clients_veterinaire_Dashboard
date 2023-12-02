@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+// import { count } from 'console';
 
 import {
   ChartComponent,
@@ -14,6 +15,8 @@ import {
   ApexForecastDataPoints,
   ApexLegend
 } from "ng-apexcharts";
+import { ToutUtilisateurService } from 'src/app/service/tout-utilisateur.service';
+import { VeterinaireService } from 'src/app/service/veterinaire.service';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -39,7 +42,10 @@ export class AccueilComponent {
   @ViewChild("chart") chart: ChartComponent | undefined;
   public chartOptions: Partial<ChartOptions>;
 
-  constructor() {
+  constructor(
+    private utilisateurService : ToutUtilisateurService,
+    private veteriniareService : VeterinaireService,
+  ) {
     this.chartOptions = {
       series: [
         {
@@ -250,6 +256,26 @@ export class AccueilComponent {
         }
       }
     };
+  }
+
+  totalUtilisateurs: string = "00";
+
+  totalVeterinaire: string = "00";
+
+
+  ngOnInit(): void {
+    this.utilisateurService.getCountUtilisateurs().subscribe(count => {
+      this.totalUtilisateurs = this.formatNumber(count);
+    });
+
+    this.veteriniareService.getCountVeterinaire().subscribe(count => {
+      this.totalVeterinaire =  this.formatNumber(count);
+    })
+  }
+
+  // Fonction pour formater le nombre avec le format spécifique
+  private formatNumber(count: number): string {
+    return count < 10 ? '0' + count : '' + count;
   }
 
 }

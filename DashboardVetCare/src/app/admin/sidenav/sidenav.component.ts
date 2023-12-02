@@ -55,4 +55,54 @@ export class SidenavComponent implements OnInit {
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }
 
+
+  // :::::::::::::::::::::::::::::::::::::: 
+
+  isDashboardClicked: boolean = true;
+  isUtilisateurClicked: boolean = false;
+  isVeterinaireClicked: boolean = false;
+  isProfilAdminClicked: boolean = false;
+  isAjouterAdminClicked: boolean = false;
+
+  toggleDashboardClick() {
+    this.isDashboardClicked = !this.isDashboardClicked;
+    this.isUtilisateurClicked = false;
+    this.isVeterinaireClicked = false;
+    this.isProfilAdminClicked = false;
+    this.isAjouterAdminClicked = false;
+  }
+
+  toggleUtilisateurClick() {
+    this.isDashboardClicked = false;
+    this.isUtilisateurClicked = !this.isUtilisateurClicked;
+    this.isVeterinaireClicked = false;
+    this.isProfilAdminClicked = false;
+    this.isAjouterAdminClicked = false;
+  }
+
+  toggleVeterinaireClick() {
+    this.isDashboardClicked = false;
+    this.isUtilisateurClicked = false;
+    this.isVeterinaireClicked = !this.isVeterinaireClicked;
+    this.isProfilAdminClicked = false;
+    this.isAjouterAdminClicked = false;
+  }
+
+
+  toggleProfilAdminClick() {
+    this.isDashboardClicked = false;
+    this.isUtilisateurClicked = false;
+    this.isVeterinaireClicked = false;
+    this.isProfilAdminClicked = !this.isProfilAdminClicked;
+    this.isAjouterAdminClicked = false;
+  }
+
+  toggleAjouterAdminClick() {
+    this.isDashboardClicked = false;
+    this.isUtilisateurClicked = false;
+    this.isVeterinaireClicked = false;
+    this.isProfilAdminClicked = false;
+    this.isAjouterAdminClicked = !this.isAjouterAdminClicked;
+  }
+
 }

@@ -75,16 +75,9 @@
                 <!-- :::::::::::::::::::::::::::::: -->
                 
                 <div class="input_seul">
-                    <label for="email">Email</label>
+                    <label for="motDePasse">Votre Mot de passe</label>
                     <br>
-                    <input [value]="adminConnect.motDePasse" name="motDePasse" type="email" placeholder="example@gmail.com"  (click)="demanderMotDePasse()">
-
-                    <div *ngIf="afficherDemandeMotDePasse" class="demande-mot-de-passe">
-                        <label for="motDePasseCache">Entrez votre mot de passe</label>
-                        <input type="password" [(ngModel)]="motDePasseSaisi">
-                        <button (click)="verifierMotDePasse()">Valider</button>
-                    </div>
-                    
+                    <input [value]="adminConnect.motDePasse" disabled name="motDePasse" type="email" placeholder="example@gmail.com"  appMaskPassword>
                 </div>
 
             </div>
