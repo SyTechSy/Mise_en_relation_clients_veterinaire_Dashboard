@@ -1,0 +1,96 @@
+<div class="titre_profil">
+    <div class="titre" >
+        <!-- <i  routerLink="/veterinaire"  style="font-size: 20px; padding-right: 10px; color: red; cursor: pointer;" class="ri-arrow-left-s-line"></i> -->
+        <p>
+            Dashboard /
+        </p>
+        <p style="padding-left: 5px;">
+            Profil Admin
+        </p>
+    </div>
+</div>
+
+<!-- // container lde Profil -->
+<div class="container_profil">
+
+    <!-- // content  -->
+    <div class="content">
+
+        <!-- // left -->
+        <div class="left_profil_admin">
+
+            <!-- <div class="content_left"> -->
+                <!-- // image couvertir -->
+                <div class="image_admin_tof ">
+                    
+                    <!-- ////// image de admin  -->
+                    <div class="image_admin_photo">
+                        <img src="../../../assets/images/profil.jpg" alt="">
+                    </div>
+                
+                   
+                </div>
+
+            <!-- </div> -->
+
+        </div>
+
+        <!-- // right -->
+        <div class="right_profil">
+
+            <div class="titre_right">
+                <p>
+                    Information personnelle
+                </p>
+            </div>
+
+            <!-- ::::::::::::: INPUT :::::::::::::: -->
+
+            <div class="input_containair" *ngIf="adminConnect">
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_left">
+                        <label for="nom">Nom</label>
+                        <br>
+                        <input [value]="adminConnect.nom" disabled name="nom" type="text" placeholder="votre nom">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_right">
+                        <label for="prenom">prenom</label>
+                        <br>
+                        <input [value]="adminConnect.prenom" disabled name="prenom" type="text" placeholder="prenom">
+                    </div>
+                </div>
+
+                <!-- :::::::::::::::::::::::::::::: -->
+                
+                <div class="input_seul">
+                    <label for="email">Email</label>
+                    <br>
+                    <input [value]="adminConnect.email" disabled name="email" type="email" placeholder="example@gmail.com">
+                </div>
+
+                <!-- :::::::::::::::::::::::::::::: -->
+                
+                <div class="input_seul">
+                    <label for="email">Email</label>
+                    <br>
+                    <input [value]="adminConnect.motDePasse" name="motDePasse" type="email" placeholder="example@gmail.com"  (click)="demanderMotDePasse()">
+
+                    <div *ngIf="afficherDemandeMotDePasse" class="demande-mot-de-passe">
+                        <label for="motDePasseCache">Entrez votre mot de passe</label>
+                        <input type="password" [(ngModel)]="motDePasseSaisi">
+                        <button (click)="verifierMotDePasse()">Valider</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

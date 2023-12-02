@@ -1,0 +1,184 @@
+<div class="titre_profil">
+    <div class="titre">
+        <p>
+            Dashboard /
+        </p>
+        <p style="padding-left: 5px;">
+            Profil Vétérinaire
+        </p>
+    </div>
+</div>
+
+<!-- // container lde Profil -->
+<div class="container_profil">
+
+    <!-- // content  -->
+    <div class="content" *ngIf="profilVeteConnecte">
+
+        <!-- // left -->
+        <div class="left_profil">
+
+            <!-- <div class="content_left"> -->
+                <!-- // image couvertir -->
+                <div class="image_couverture">
+                    <img class="cou" [src]="profilVeteConnecte.imagePRO" alt="">
+                    
+                    <!-- ////// image de admin  -->
+                    <div class="image_admin">
+                        <img [src]="profilVeteConnecte.imagePRO" alt="">
+                    </div>
+                
+                    <!-- /////////////  -->
+    
+                    <div class="contenue_profil">
+        
+                        <!-- :::::::::::::::: -->
+                        <div class="name">
+                            <p>
+                                {{ profilVeteConnecte.prenom }}
+                                {{ profilVeteConnecte.nom }}
+                            </p>
+                        </div>
+
+                        <!-- // -->
+                        <div class="membre">
+                            <i class="ri-verified-badge-fill"></i>
+                            <p>
+                                Membre VetCare 
+                            </p>
+                        </div>
+
+                        <!-- ///  -->
+                        <!-- <div class="description">
+                            <p>
+                                {{ profilVeteConnecte.description }}
+                            </p>
+                        </div> -->
+        
+                    </div>
+
+                    <!-- <div class="logo">
+                        <img src="../../../assets/images/LOGO2.png" alt="">
+                    </div> -->
+
+                </div>
+
+            <!-- </div> -->
+
+        </div>
+
+        <!-- // right -->
+        <div class="right_profil">
+
+            <div class="titre_right">
+                <p>
+                    Information personnelle
+                </p>
+            </div>
+
+            <!-- ::::::::::::: INPUT :::::::::::::: -->
+
+            <div class="input_containair">
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_left">
+                        <label for="email">Email</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.email" disabled type="text" placeholder="example@gmail.com">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_right">
+                        <label for="numero">Numero</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.numero" disabled type="text" placeholder="00000000">
+                    </div>
+                </div>
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_left">
+                        <label for="genre">Diplôme ou Certificat</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.diplomeOuCertificat" disabled type="text" placeholder="Votre diplôme">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_right">
+                        <label for="nom">Domaine specialisation</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.domaineSpecialisation" disabled type="text" placeholder="Uniquement pour chien">
+                    </div>
+                </div>
+
+                <!-- :::::::::::: Input triple  -->
+                <div class="triple_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="triple_left">
+                        <label for="date">Date de naissance</label>
+                        <br>
+                        <input [value]="(profilVeteConnecte.jours || '') + '-' + (profilVeteConnecte.mois || '') + '-' + (profilVeteConnecte.annee || '')" disabled type="text" placeholder="2000-11-12">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="triple_milieu">
+                        <label for="nom">Pays</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.pays" disabled type="text" placeholder="Mali...">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="triple_right">
+                        <label for="nom">Quartier</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.quartier " disabled type="text" placeholder="Boulkassoumbougou">
+                    </div>
+                </div>
+
+                <!-- ::::::::::::::::::::::::::::::::::: -->
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input_new">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_new_left">
+                        <label for="rue">Rue</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.rue" disabled type="text" placeholder="000">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_new_right">
+                        <label for="nom">Code postal</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.codePostal" disabled type="text" placeholder="00000">
+                    </div>
+                </div>
+                <!-- :::::::::::::::::::::::::::::::::::::  -->
+
+                <!-- :::::::::::: Input triple  -->
+                <div class="triple_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="triple_left">
+                        <label for="date">Genre</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.genre" disabled type="text" placeholder="Homme">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="triple_milieu">
+                        <label for="nom">Année experience</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.anneeExperience" disabled type="text" placeholder="2 ans">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="triple_right">
+                        <label for="nom">Langue parler</label>
+                        <br>
+                        <input [value]="profilVeteConnecte.langueParler" disabled type="text" placeholder="Bambara et Français">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

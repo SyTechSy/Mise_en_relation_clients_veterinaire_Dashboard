@@ -8,6 +8,9 @@ import { BodyComponent } from './admin/body/body.component';
 import { UtilisateurComponent } from './table/utilisateur/utilisateur.component';
 import { VeterinaireComponent } from './table/veterinaire/veterinaire.component';
 import { AjouterAdminComponent } from './admin/ajouter-admin/ajouter-admin.component';
+import { ProfilAdminComponent } from './table/profil-admin/profil-admin.component';
+import { ProfilVeterinaireComponent } from './table/profil-veterinaire/profil-veterinaire.component';
+import { ProfilUtilisateurComponent } from './table/profil-utilisateur/profil-utilisateur.component';
 
 const routes: Routes = [
   { 
@@ -44,6 +47,18 @@ const routes: Routes = [
   {
     path : 'ajouter-admin',
     component : AjouterAdminComponent
+  },
+  {
+    path : 'profil-admin',
+    component : ProfilAdminComponent
+  },
+  {
+    path : 'profil-veterinaire/:id',
+    component : ProfilVeterinaireComponent
+  },
+  {
+    path : 'profil-utilisateur/:id',
+    component : ProfilUtilisateurComponent
   }
 
 ];

@@ -1,3 +1,65 @@
-<h1>
-    Vétérinaire
-</h1>
+<div class="table_container">
+
+    <div class="header_container">
+
+        <div class="table_name" >
+            <p>
+                Vétérinaire
+            </p>
+        </div>
+
+        <div class="search">
+            <div class="input-container">
+                <input type="text" name="text" class="input" placeholder="Recherche Vétérinaire">
+                <span class="icon_svg"> 
+                  <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th class="id">#</th>
+                <th class="nom">Nom</th>
+                <th class="prenom">Prenom</th>
+                <th class="mail">Email</th>
+                <th class="tel">Téléphone</th>
+                <th class="address">Quartier</th>
+                <th class="detail">Détails</th>
+            </tr>
+        </thead>
+        <tbody class="event" *ngFor="let afficheveterinaire of listveterinaire">
+            <tr>
+                <td class="profil_image" routerLink="/profil-veterinaire/{{afficheveterinaire.veteriniareId}}">
+                    <img [src]="afficheveterinaire.imagePRO" alt="">
+                </td>
+
+                <td> {{afficheveterinaire.nom}} </td>
+
+                <td> {{afficheveterinaire.prenom}} </td>
+
+                <td> {{afficheveterinaire.email}} </td>
+
+                <td> {{afficheveterinaire.numero}} </td>
+
+                <td> {{afficheveterinaire.quartier}} </td>
+
+                <td> 
+                    <div class="contai_icon">
+                        <div class="icon mod">
+                            <i class="ri-edit-box-line"></i>
+                        </div>
+                        <div class="icon sup">
+                            <i class="ri-delete-bin-3-line"></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- and so on... -->
+        </tbody>
+    </table>
+</div>

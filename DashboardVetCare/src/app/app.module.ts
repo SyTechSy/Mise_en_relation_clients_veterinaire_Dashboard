@@ -14,6 +14,10 @@ import { UtilisateurComponent } from './table/utilisateur/utilisateur.component'
 import { VeterinaireComponent } from './table/veterinaire/veterinaire.component';
 import { AccueilComponent } from './admin/accueil/accueil.component';
 import { AjouterAdminComponent } from './admin/ajouter-admin/ajouter-admin.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { ProfilAdminComponent } from './table/profil-admin/profil-admin.component';
+
 
 @NgModule({
   declarations: [
@@ -27,13 +31,17 @@ import { AjouterAdminComponent } from './admin/ajouter-admin/ajouter-admin.compo
     VeterinaireComponent,
     AccueilComponent,
     AjouterAdminComponent,
+    // ProfilAdminComponent
+    ProfilAdminComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     NgApexchartsModule,
+    HttpClientModule,
 
   ],
   providers: [],

@@ -58,7 +58,7 @@
         
                                 <!-- // input champs -->
                                 <div class="input">
-                                    <input type="text" name="nom" id="nom" required placeholder="Saisis vote nom...">
+                                    <input type="text" [(ngModel)]="nom" name="nom" id="nom" required placeholder="Saisis vote nom...">
                                 </div>
                             </div>
                             <!-- // input 2  -->
@@ -70,7 +70,7 @@
         
                                 <!-- // input champs -->
                                 <div class="input">
-                                    <input type="text" name="prenom" id="prenom" required placeholder="Saisis vote prénom...">
+                                    <input type="text" [(ngModel)]="prenom" name="prenom" id="prenom" required placeholder="Saisis vote prénom...">
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
     
                             <!-- // input champs -->
                             <div class="input_email">
-                                <input type="email" name="email" id="email" required placeholder="Saisis votre email...">
+                                <input type="email" [(ngModel)]="email" name="email" id="email" required placeholder="Saisis votre email...">
                             </div>
                         </div>
                         <!-- ////////////////  -->
@@ -97,7 +97,7 @@
         
                                 <!-- // input champs -->
                                 <div class="input">
-                                    <input type="password" name="password" id="password" required placeholder="Mot de passe...">
+                                    <input [(ngModel)]="motDePasse" type="password" name="motDePasse" id="password" required placeholder="Mot de passe...">
                                 </div>
                             </div>
                             <!-- // input 5  -->
@@ -123,7 +123,7 @@
                             </div>
 
                             <div class="button_submit">
-                                <button class="submit" type="submit">
+                                <button (click)="onSubmit()" type="submit" style="background-color: #008000; border: none; padding: 10px 30px; border-radius: 5px; color: #fff; cursor: pointer;" >
                                     Créer un compte
                                 </button>
                             </div>

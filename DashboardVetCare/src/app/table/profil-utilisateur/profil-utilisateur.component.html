@@ -1,0 +1,130 @@
+<div class="titre_profil">
+    <div class="titre">
+        <!-- <i  routerLink="/veterinaire"  style="font-size: 20px; padding-right: 10px; color: red; cursor: pointer;" class="ri-arrow-left-s-line"></i> -->
+        <p>
+            Dashboard /
+        </p>
+        <p style="padding-left: 5px;">
+            Profil Utilisateur
+        </p>
+    </div>
+</div>
+
+<!-- // container lde Profil -->
+<div class="container_profil">
+
+    <!-- // content  -->
+    <div class="content" *ngIf="toutUserConnecte">
+
+        <!-- // left -->
+        <div class="left_profil">
+
+            <!-- <div class="content_left"> -->
+                <!-- // image couvertir -->
+                <div class="image_couverture">
+                    <img class="cou" [src]="toutUserConnecte.photo" alt="">
+                    
+                    <!-- ////// image de admin  -->
+                    <div class="image_admin">
+                        <img [src]="toutUserConnecte.photo" alt="">
+                    </div>
+                
+                    <!-- /////////////  -->
+    
+                    <div class="contenue_profil">
+        
+                        <!-- :::::::::::::::: -->
+                        <div class="name">
+                            <p>
+                                {{ toutUserConnecte.prenom }}
+                                {{ toutUserConnecte.nom }}
+                            </p>
+                        </div>
+
+                        <!-- // -->
+                        <div class="membre">
+                            <i class="ri-verified-badge-fill"></i>
+                            <p>
+                                Membre VetCare 
+                            </p>
+                        </div>
+
+                        <!-- ///  -->
+                        <div class="description">
+                            <p>
+                                {{ toutUserConnecte.description }}
+                            </p>
+                        </div>
+        
+                    </div>
+
+                    <!-- <div class="logo">
+                        <img src="../../../assets/images/LOGO2.png" alt="">
+                    </div> -->
+
+                </div>
+
+            <!-- </div> -->
+
+        </div>
+
+        <!-- // right -->
+        <div class="right_profil">
+
+            <div class="titre_right">
+                <p>
+                    Information personnelle
+                </p>
+            </div>
+
+            <!-- ::::::::::::: INPUT :::::::::::::: -->
+
+            <div class="input_containair">
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_left">
+                        <label for="numero">Numero</label>
+                        <br>
+                        <input [value]="toutUserConnecte.numero" disabled type="text" placeholder="70000000">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_right">
+                        <label for="genre">Genre</label>
+                        <br>
+                        <input [value]="toutUserConnecte.genre" disabled type="text" placeholder="Homme">
+                    </div>
+                </div>
+
+                <!-- :::::::::::: Input double  -->
+                <div class="double_input">
+                    <!-- /::::::::::::::::::: -->
+                    <div class="input_left">
+                        <label for="date">Date de naissance</label>
+                        <br>
+                        <input [value]="toutUserConnecte.dateNaissance" disabled type="text" placeholder="2000-11-12">
+                    </div>
+                    <!-- :::::::::::::::::::::::: -->
+                    <div class="input_right">
+                        <label for="nom">Quartier</label>
+                        <br>
+                        <input [value]="toutUserConnecte.quartier" disabled  type="text" placeholder="Boulkassoumbougou">
+                    </div>
+                </div>
+
+                <!-- :::::::::::::::::::::::::::::: -->
+                
+                <div class="input_seul">
+                    <label for="email">Email</label>
+                    <br>
+                    <input [value]="toutUserConnecte.email" disabled  type="email" placeholder="example@gmail.com">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

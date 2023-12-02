@@ -57,7 +57,7 @@
     
                             <!-- // input champs -->
                             <div class="input">
-                                <input type="text" name="nom" id="nom" required placeholder="votre nom s'il vous plaît.">
+                                <input [(ngModel)]="email" type="text" name="nom" id="email" required placeholder="votre nom s'il vous plaît.">
                             </div>
                         </div>
     
@@ -69,12 +69,12 @@
     
                             <!-- // input champs -->
                             <div class="input">
-                                <input type="password" name="password" id="password" required placeholder="*****************">
+                                <input [(ngModel)]="motDePasse" type="password" name="password" id="motDePasse" required placeholder="*****************">
                             </div>
                         </div>
 
                         <div class="btn_submit">
-                            <button type="submit" class="btn">
+                            <button (click)="onSubmit()" type="submit" class="btn">
                                 Connectez-vous au tableau de bord
                             </button>
                         </div>
