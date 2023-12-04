@@ -322,8 +322,19 @@
 }
 
 
+.btn_deconnexion {
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    color: red;
+    font-weight: 500;
+    letter-spacing: 0.50px;
+    transition: all 0.3s;
+}
 
-
+.btn_deconnexion:hover {
+    color: #000;
+}
 
 /* //////////////////////////////////////////////////// */
 

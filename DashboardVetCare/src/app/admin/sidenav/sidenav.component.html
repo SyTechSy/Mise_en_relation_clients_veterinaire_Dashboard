@@ -140,7 +140,34 @@
             </div>
         </div>
 
+        
+
+        <!-- // table veterinaire -->
+        <div class="cadre_tache_global" style="margin-top: 30px;">
+            <!-- // icon  -->
+            <div class="container_icon2">
+                <div class="icon_tache2">
+                    <i style="transform: rotate(50deg);" class="ri-rocket-2-fill"></i>
+                </div>
+            </div>
+            
+            <div class="cadre_tache2" *ngIf="collapsed">
+            <!-- // name_tache  -->
+                <div *ngIf="collapsed" class="name_tache">
+                    <button type="submit" class="btn_deconnexion" (click)="deconnecter()">
+                        Deconnexion
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- <div class="deconnexion">
+        <button type="submit">
+            Deconnexion
+        </button>
+    </div> -->
 
 
 

@@ -17,6 +17,7 @@ import { AjouterAdminComponent } from './admin/ajouter-admin/ajouter-admin.compo
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ProfilAdminComponent } from './table/profil-admin/profil-admin.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -41,6 +42,8 @@ import { ProfilAdminComponent } from './table/profil-admin/profil-admin.componen
     ReactiveFormsModule,
     NgApexchartsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    
 
   ],
   providers: [],

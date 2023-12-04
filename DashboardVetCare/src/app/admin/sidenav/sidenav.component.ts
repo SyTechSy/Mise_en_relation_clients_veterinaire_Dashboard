@@ -1,5 +1,6 @@
 import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 import { navbarData } from './nav-data';
+import { Router } from '@angular/router';
 
 interface SideNavToggle {
   screenWidth: number;
@@ -20,7 +21,9 @@ export class SidenavComponent implements OnInit {
 
   sidebarVisible: boolean = true;
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
     this.screenWidth = window.innerWidth;
     this.checkScreenWidth();
   }
@@ -103,6 +106,14 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = false;
     this.isProfilAdminClicked = false;
     this.isAjouterAdminClicked = !this.isAjouterAdminClicked;
+  }
+
+
+
+   // Méthode pour déconnecter l'utilisateur
+   deconnecter() {
+    localStorage.removeItem('utilisateur');
+    this.router.navigate(['/login-admin']).then();
   }
 
 }
