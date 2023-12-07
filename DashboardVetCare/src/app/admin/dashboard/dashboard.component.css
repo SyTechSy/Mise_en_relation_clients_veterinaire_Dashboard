@@ -76,3 +76,63 @@
 .name_admin .nom{
     padding-left: 10px;
 }
+
+
+
+/* /////////////////////////////////////////  */
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .input {
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  .input::placeholder {
+    color: transparent;
+  }
+  
+  .input:focus::placeholder {
+    color: rgb(131, 128, 128);
+  }
+  
+  .input:focus,.input:not(:placeholder-shown) {
+    background-color: #fff;
+    border: 1px solid #008000;
+    width: 290px;
+    cursor: none;
+    padding: 18px 16px 18px 45px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 99px;
+    z-index: -1;
+    fill: #008000;
+    border: 1px solid #008000;
+    margin-left: 10px;
+  }
+  
+  .input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+  }
+  

@@ -66,6 +66,7 @@ export class SidenavComponent implements OnInit {
   isVeterinaireClicked: boolean = false;
   isProfilAdminClicked: boolean = false;
   isAjouterAdminClicked: boolean = false;
+  // isdeconnecteAdminClicked: boolean = false;
 
   toggleDashboardClick() {
     this.isDashboardClicked = !this.isDashboardClicked;
@@ -73,6 +74,7 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = false;
     this.isProfilAdminClicked = false;
     this.isAjouterAdminClicked = false;
+    // this.isdeconnecteAdminClicked = false;
   }
 
   toggleUtilisateurClick() {
@@ -81,6 +83,7 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = false;
     this.isProfilAdminClicked = false;
     this.isAjouterAdminClicked = false;
+    // this.isdeconnecteAdminClicked = false;
   }
 
   toggleVeterinaireClick() {
@@ -89,6 +92,7 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = !this.isVeterinaireClicked;
     this.isProfilAdminClicked = false;
     this.isAjouterAdminClicked = false;
+    // this.isdeconnecteAdminClicked = false;
   }
 
 
@@ -98,6 +102,7 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = false;
     this.isProfilAdminClicked = !this.isProfilAdminClicked;
     this.isAjouterAdminClicked = false;
+    // this.isdeconnecteAdminClicked = false;
   }
 
   toggleAjouterAdminClick() {
@@ -106,6 +111,16 @@ export class SidenavComponent implements OnInit {
     this.isVeterinaireClicked = false;
     this.isProfilAdminClicked = false;
     this.isAjouterAdminClicked = !this.isAjouterAdminClicked;
+    // this.isdeconnecteAdminClicked = false;
+  }
+
+  toggleDeconnecteAdminClick() {
+    this.isDashboardClicked = false;
+    this.isUtilisateurClicked = false;
+    this.isVeterinaireClicked = false;
+    this.isProfilAdminClicked = false;
+    this.isAjouterAdminClicked = false;
+    // this.isdeconnecteAdminClicked = !this.isdeconnecteAdminClicked;
   }
 
 
